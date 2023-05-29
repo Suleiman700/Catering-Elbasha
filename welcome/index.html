@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Catering El-Basha</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+
+    <!-- css include -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/metisMenu.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body onLoad="masonryClick()">
+<!-- body wrap start -->
+<div class="body_wrap">
+
+    <!-- backtotop - start -->
+    <div id="thetop"></div>
+    <div id="backtotop">
+        <a href="#" id="scroll">
+            <i class="fa fa-arrow-up theme_primary"></i>
+            <i class="fa fa-arrow-up theme_primary"></i>
+        </a>
+    </div>
+    <!-- backtotop - end -->
+
+    <!-- start Preloader  -->
+    <div class="preloder_part">
+        <div class="spinner">
+            <div class="dot1"></div>
+            <div class="dot2"></div>
+        </div>
+    </div>
+    <!-- End Preloader  -->
+
+    <!-- header start -->
+    <header class="header_area header_3 transparent_header" dir="LTR">
+        <div id="sticky-header" class="header_wrap header_space">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-6">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="assets/img/logo/logo.png" alt="logo">
+                                <img src="assets/img/logo/logo_black.png" alt="logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-none d-lg-block">
+                        <div class="main_menu_wrap navbar navbar-expand-lg">
+                            <nav class="main_menu collapse navbar-collapse">
+                                <ul class="main_menu_list ul_li">
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-6">
+                        <div class="header_right ul_li_right">
+                            <div class="header_carts ul_li">
+                                <div class="hamburger_menu">
+                                    <a href="mailto:dimshare630@gmail.com" class="active">
+                                        <div class="icon bar d-lg-none">
+                                            <span><i class="fa fa-envelope"></i></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="ul_li">
+                                    <a class="icon cart_wishlist" href="mailto:dimshare630@gmail.com">
+                                        <span><i class="fa fa-envelope"></i></span>
+                                    </a>
+                                    <a class="icon cart_wishlist" href="https://codecanyon.net/user/soleman630">
+                                        <span><i class="fa fa-eye"></i></span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- slide-bar start -->
+    <aside class="slide-bar">
+        <div class="close-mobile-menu">
+            <a href="javascript:void(0);"><i class="fa fa-times"></i></a>
+        </div>
+
+
+        <!-- side-mobile-menu start -->
+        <nav class="side-mobile-menu text-center">
+            <ul id="mobile-menu-active">
+                <div class="icon bar d-lg-none text-danger" style="font-size: 1.1rem;">
+                    <a href="tel:123456789">
+                        <span><i class="fa fa-phone"></i> 123456789</span>
+                    </a>
+                    <br>
+                    <a href="https://ul.waze.com/ul?ll=32.70815560%2C35.30405045&navigate=yes&zoom=13&utm_campaign=waze_website&utm_source=waze_website&utm_medium=lm_share_location">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve"><g><path fill="#303030" d="M99.513,76.832c0,4.719-3.825,8.545-8.544,8.545c-4.718,0-8.544-3.826-8.544-8.545   c0-4.719,3.826-8.543,8.544-8.543C95.688,68.289,99.513,72.112,99.513,76.832"/><path fill="#303030" d="M139.43,76.832c0,4.719-3.826,8.545-8.545,8.545c-4.718,0-8.544-3.826-8.544-8.545   c0-4.719,3.826-8.543,8.544-8.543C135.604,68.289,139.43,72.112,139.43,76.832"/><path fill="#303030" d="M110.621,122.646c-14.477,0-27.519-9.492-29.911-21.917c-0.464-2.412,1.116-4.745,3.528-5.209   c2.413-0.465,4.745,1.116,5.209,3.528c1.406,7.304,10.152,14.996,21.81,14.691c12.144-0.318,20.165-7.58,21.813-14.588   c0.563-2.391,2.961-3.872,5.35-3.312c2.393,0.563,3.875,2.958,3.312,5.349c-1.346,5.721-5.03,11.021-10.375,14.926   c-5.567,4.07-12.438,6.324-19.866,6.52C111.201,122.643,110.91,122.646,110.621,122.646"/><path fill="#303030" d="M183.97,81.47c-1.644-9.71-5.5-18.811-11.464-27.051c-6.736-9.307-15.951-17.078-26.648-22.472   c-10.812-5.452-22.88-8.335-34.9-8.335c-3.391,0-6.809,0.23-10.16,0.682c-14.034,1.896-27.833,7.734-38.856,16.439   c-12.42,9.808-20.435,22.418-23.177,36.469C37.948,81.379,37.6,86,37.263,90.468c-0.528,6.994-1.074,14.226-3.298,18.952   c-1.52,3.23-3.788,5.381-9.919,5.381c-3.374,0-6.457,1.908-7.963,4.928c-1.505,3.02-1.173,6.631,0.857,9.324   c9.237,12.254,21.291,19.676,33.982,24.148c-0.578,1.746-0.903,3.605-0.903,5.545c0,9.744,7.899,17.643,17.643,17.643   c9.503,0,17.229-7.518,17.606-16.928c4.137,0.225,23.836,0.279,26.033,0.217c0.487,9.309,8.167,16.711,17.596,16.711   c9.743,0,17.642-7.898,17.642-17.643c0-2.221-0.428-4.338-1.176-6.295c6.918-3.365,13.448-7.906,19.146-13.375   c7.946-7.625,13.778-16.621,16.868-26.016C184.854,102.486,185.728,91.857,183.97,81.47 M67.662,164.568   c-3.215,0-5.822-2.605-5.822-5.822c0-3.215,2.607-5.822,5.822-5.822c3.216,0,5.822,2.607,5.822,5.822   C73.484,161.963,70.878,164.568,67.662,164.568 M128.897,164.568c-3.216,0-5.823-2.605-5.823-5.822   c0-3.215,2.607-5.822,5.823-5.822s5.822,2.607,5.822,5.822C134.72,161.963,132.113,164.568,128.897,164.568 M172.925,110.281   c-5.095,15.49-18.524,28.281-32.835,34.83c-3.047-2.504-6.943-4.006-11.192-4.006c-6.848,0-12.771,3.906-15.694,9.607   c-2.976,0.123-25.135,0.047-29.984-0.285c-2.972-5.547-8.822-9.322-15.557-9.322c-4.48,0-8.559,1.682-11.669,4.434   c-12.054-3.895-23.438-10.551-31.947-21.842c25.161,0,20.196-28.118,23.451-44.792c4.959-25.412,30.099-42.499,54.491-45.794   c3-0.405,6-0.602,8.969-0.602C151.047,32.51,186.732,68.302,172.925,110.281"/></g></svg>
+                            Waze
+                        </span>
+                    </a>
+                </div>
+                <hr />
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a> </li>
+                <li><a href="#meals">Meals</a> </li>
+                <li><a href="#reviews">Reviews</a> </li>
+                <li><a href="#catering_services">Services</a> </li>
+                <li><a href="#contact">Contact</a> </li>
+                <li class="dropdown nav-link" hidden>
+                    <a class="nav-link" href="#">Menu</a>
+                    <ul class="sub-menu">
+                        <li><a href="javascript:void(0)">فرع 1</a></li>
+                        <li><a href="javascript:void(0)">فرع 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- side-mobile-menu end -->
+    </aside>
+    <div class="body-overlay"></div>
+    <!-- slide-bar end -->
+
+    <!-- main body end -->
+    <main>
+        <!-- hero start -->
+        <section class="hero_area hero_3 section_notch_bottom" data-background="assets/img/bg/hero_bg_ing_02.jpg">
+            <div class="hero_wrap hero_height">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="hero_content_wrap text-center">
+                                <div class="hero_text shimmer">
+                                    <h2><strong>Catering <span>El-Basha</span></strong></h2>
+                                </div>
+                                <div class="hero_img">
+                                    <img src="assets/img/hero/img_03.png" alt="">
+                                </div>
+                                <div class="hero_feat_wrap d-none d-md-block">
+                                    <div class="hf_single sf_01 text-center">
+                                        <h4><ins>Responsive</ins></h4>
+                                        <p>Matches every device screen</p>
+                                        <div class="hf_shape">
+                                            <img src="assets/img/shape/hf_01.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="hf_single sf_02 text-center">
+                                        <div class="hf_shape">
+                                            <img src="assets/img/shape/hf_02.png" alt="">
+                                        </div>
+                                        <h4><ins>Premium</ins></h4>
+                                        <p>Premium <span style="color: #b12e26;">Catering</span> template for your work</p>
+                                    </div>
+                                </div>
+                                <div class="hero_shape">
+                                    <img class="shape hs_01" src="assets/img/shape/hs_01.png" alt="">
+                                    <img class="shape hs_02" src="assets/img/shape/hs_02.png" alt="">
+                                    <img class="shape his_01" src="assets/img/shape/his_01.png" alt="">
+                                    <img class="shape his_02" src="assets/img/shape/his_02.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero end -->
+
+
+
+        <!-- about start -->
+        <section class="services_area services_space white_bg " id="about" style="background-image: url('assets/img/bg/bg-table4.jpg'); background-size: cover;">
+            <div class="container">
+                <div class="sec_title sec_title-2">
+                    <h2><strong>Catering Template</strong></h2>
+                    <p>A premium catering templates that can be used for restaurants or catering services.</p>
+                    <p>Built to be fast and responsive on all devices and sizes.</p>
+                    <p>Choose the version you want from the section below.</p>
+                </div>
+            </div>
+
+            <style>
+                .versions {
+                    position: relative;
+                    width:100%;
+                    /*max-width:100px;*/
+                }
+                .versions:before {
+                    content:"";
+                    position:absolute;
+                    width:100%;
+                    height:100%;
+                    top:0;left:0;right:0;
+                    background-color:rgba(0,0,0,0);
+                }
+                .versions:hover::before {
+                    background-color:rgba(0,0,0,0.5);
+                }
+                .versions img {
+                    display:block;
+                }
+                .versions button {
+                    position: absolute;
+                    top: 60%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+                    opacity:0;
+                }
+                .versions:hover button {
+                    opacity: 1;
+                }
+            </style>
+
+            <section class="reservation_area section_notch_top" data-background="assets/img/bg/reservation_bg.jpg" id="contact" style="background-image: url(&quot;assets/img/bg/reservation_bg.jpg&quot;);" dir="LTR">
+                <div class="container-fluid p-0">
+                    <div class="row g-0">
+                        <div class="col-lg-6">
+                            <div class="reservation_form_wrap">
+                                <div class="sec_title sec_title-white text-center">
+                                    <h2>English Version</h2>
+                                </div>
+                                <a href="https://wegate.net/projects/templates/catering_elbasha/LTR/">
+                                    <div class="versions reservation_img">
+                                        <img class="zoom img-fluid" src="assets/img/bg/ltr_version.jpg" alt="">
+                                        <button class="btn btn-danger">View Template</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="reservation_form_wrap">
+                                <div class="sec_title sec_title-white text-center">
+                                    <h2>Arabic Version</h2>
+                                </div>
+                                <a href="https://wegate.net/projects/templates/catering_elbasha/RTL/">
+                                    <div class="versions reservation_img">
+                                        <img src="assets/img/bg/rtl_version.jpg" alt="">
+                                        <button class="btn btn-danger">View Template</button>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- about end -->
+    </main>
+    <!-- main body end -->
+
+    <!-- Footer Start -->
+    <footer class="footer-area footer_bg" dir="LTR">
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="copyright_wrap text-center">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3 col-md-3">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-9">
+                            <div class="copyright text-md-center" dir="ltr">
+                                <p>
+                                    All Rights Reserved © Catering El-Basha 2021
+                                    <br>
+                                    Design By <a href="https://nicurb.com/">NiCurb</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-12">
+                            <div class="social_links text-lg-end">
+                                <a href="mailto:dimshare630@gmail.com"><i class="fa fa-envelope"></i></a>
+                                <a href="https://codecanyon.net/user/soleman630"><i class="fa fa-eye"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</div>
+<!-- body wrap end -->
+
+<!-- jquery include -->
+<script src="assets/js/jquery-3.5.0.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/metisMenu.min.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+<script src="assets/js/main.js"></script>
+
+<!-- Font Awesome -->
+<script src="assets/js/fontawesome.js"></script>
+<script src="assets/js/fontawesome.min.js"></script>
+
+<!-- jQuery 1.7.2+ or Zepto.js 1.0+ -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+
+
+
+</body>
+
+</html>
